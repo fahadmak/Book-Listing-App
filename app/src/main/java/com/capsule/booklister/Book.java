@@ -4,9 +4,11 @@ public class Book {
 
     private String title;
     private String imageUrl;
+    private String author;
 
-    public Book(String title, String imageUrl) {
+    public Book(String title, String author, String imageUrl) {
         this.title = title;
+        this.author = author;
         this.imageUrl = imageUrl;
     }
 
@@ -16,5 +18,9 @@ public class Book {
 
     public String getImageUrl() {
         return imageUrl;
+    }
+
+    public String getAuthor() {
+        return author;
     }
 }
